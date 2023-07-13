@@ -32,7 +32,7 @@ docker exec -it configserver3 mongosh --port 27017
 rs.initiate(
   {
     _id: "configReplSet",
-    configserver: true,
+    configsvr: true,
     members: [
       { _id: 0, host: "configserver1:27015" },
       { _id: 1, host: "configserver2:27016" },
